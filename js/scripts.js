@@ -1,4 +1,6 @@
 $(document).ready(function () {
-    $('#countdown').countDown();
-//console.log('djhf');
+    $('#countdown').countDown({
+        endDate: '2017-07-11'
+    });
+    
 });
