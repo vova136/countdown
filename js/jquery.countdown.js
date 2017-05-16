@@ -13,8 +13,7 @@
             $('<div class="box" id="minutes"></div>').appendTo($this);
             $('<div class="box" id="seconds"></div>').appendTo($this);
 
-
-            
+            function timer(){
                 var currentdate = new Date();
                 var endDate = new Date(options.endDate);
 
@@ -36,21 +35,24 @@
                 $('#hours').html(timeSegmentInHours);
                 $('#minutes').html(timeSegmentInMinutes);
                 $('#seconds').html(timeSegmentInSeconds);
+            }
                 
-            
-               
+            setInterval(timer, 1000);
 
 
 
 
 
 
-            console.log(currentdate.getTime());
-            console.log(endDate.getTime());
-            console.log(timeSegment);
-            console.log(timeSegmentInHours);
-            console.log(timeSegmentInMinutes);
-            console.log(timeSegmentInSeconds);
+
+
+
+//            console.log(currentdate.getTime());
+//            console.log(endDate.getTime());
+//            console.log(timeSegment);
+//            console.log(timeSegmentInHours);
+//            console.log(timeSegmentInMinutes);
+//            console.log(timeSegmentInSeconds);
 
         });
 
