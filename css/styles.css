@@ -56,7 +56,11 @@ textarea:focus,
 select:focus{outline:none;}
 /* General settings */
 
-
+#countdown{
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+}
 .box{
     width: 50px;
     height: 40px;
@@ -67,4 +71,5 @@ select:focus{outline:none;}
     display: inline-block;
     vertical-align: top;
     margin: 10px;
+    text-align: center;
 }
